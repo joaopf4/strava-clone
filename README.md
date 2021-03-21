@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## The project
 This project was made as a self challenge of clonning Strava aplication, once I'd never seen any tutorial or imersions on web teaching to clone Strava. 
-I've seen many clonings of spotfy, netflix, twitter, but never seen and strava clone, rs. 
+I've seen many clonings of spotfy, netflix, twitter, but never seen an strava clone, rs. 
 
 So here's the first try on internet xD.
 
