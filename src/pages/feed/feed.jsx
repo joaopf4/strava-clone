@@ -28,11 +28,11 @@ function Feed() {
     return (
         <FeedContainer>
             <NavContainer >
-                <span>Feed</span>
+                <p>Feed</p>
                 <ul>
-                    <li><a onClick={() => changeToFollowing()} href="#feed">Following</a></li>
-                    <li><a onClick={() => changeToYou() } href="#feed">You</a></li>
-                    <li><a onClick={() => changeToProfile()} href="#feed">Profile</a></li>
+                    <li><span onClick={() => changeToFollowing()} >Following</span></li>
+                    <li><span onClick={() => changeToYou() } >You</span></li>
+                    <li><span onClick={() => changeToProfile()} >Profile</span></li>
                 </ul>
             </NavContainer>
             <br/>

@@ -17,7 +17,7 @@ export const NavContainer = styled.nav `
     flex-direction: column;
     font-weight: 800;
     position: relative; 
-    span {
+    p {
         width: fit-content;
         margin: 16px;
     }
@@ -36,9 +36,8 @@ export const NavContainer = styled.nav `
         width: 33.3%;
         font-size: 14px;
     }
-    a {
-        text-decoration: none;
-        color: white;
+    span {
+        cursor: pointer;
     }
 
 `
