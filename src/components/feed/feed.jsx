@@ -5,6 +5,7 @@ import { FeedContainer } from './styled';
 function Feed() {
     return (
         <FeedContainer>
+            <br/>
             <Following />
         </FeedContainer>
     );
