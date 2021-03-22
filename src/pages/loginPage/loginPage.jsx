@@ -10,6 +10,7 @@ function Login(props) {
         password : "",
         successMessage: null
     })
+    const [loading, setLoading] = React.useState(false)
 
     const handleChange = (e) => {
         const {id , value} = e.target   
@@ -29,7 +30,10 @@ function Login(props) {
             "password":state.password,
         }
         if(payload.email === 'provi@provi.com' && payload.password === '12345'){
-            redirectToHome();
+            setLoading(true);
+            setTimeout(() => {
+                redirectToHome();
+              }, 2 * 1000);
         } else{
             alert("Senha ou usuário incorretos");
 
@@ -76,12 +80,16 @@ function Login(props) {
                         </i>
                     </p>
                 </InputsComp>
+                {!loading ? 
                 <Button 
                     type="submit"
                     onClick={handleLogin}
                 >
                     Login
-                </Button>
+                </Button> 
+                :
+                <span><br/>Carregando...</span>
+                }
             </form>
         </LoginContainer>
     );

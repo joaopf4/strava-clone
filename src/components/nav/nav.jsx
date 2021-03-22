@@ -6,9 +6,9 @@ function Nav() {
     <NavContainer>
       <span>Feed</span>
       <ul>
-        <li>Following</li>
-        <li>You</li>
-        <li>Clubs</li>
+        <li><a href="#">Following</a></li>
+        <li><a href="#">You</a></li>
+        <li><a href="#">Clubs</a></li>
       </ul>
     </NavContainer>
   );
