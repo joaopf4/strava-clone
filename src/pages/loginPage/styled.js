@@ -74,8 +74,8 @@ export const Button = styled.button `
     background-color: #e84f32;
     color: #fff;
     transform: translateY(3px);
-    transition: .25s;
-    box-shadow: rgba(17, 16, 16, 1) 20px 17px ;
+    transition: .15s;
+    box-shadow: rgba(17, 16, 16, 1) 14px 14px ;
   }
   @media(max-width: 460px) {
     width: 260px;

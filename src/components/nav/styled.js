@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavContainer = styled.nav `
     width: inherit;
-    height: 12vh;
+    height: 14vh;
     background-color: #e84f32;
     box-sizing: border-box;
     color: white;
@@ -12,7 +12,7 @@ export const NavContainer = styled.nav `
     position: relative; 
     span {
         width: fit-content;
-        margin: 20px;
+        margin: 16px;
     }
     ul {
         list-style-type: none;
@@ -27,6 +27,11 @@ export const NavContainer = styled.nav `
     li {
         display: inline-block;
         width: 33.3%;
+        font-size: 14px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 
 `
