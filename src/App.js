@@ -5,8 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import styled from 'styled-components';
-import Feed from './components/feed';
-import Nav from './components/nav';
+import Feed from './pages/feed';
 import Login from './pages/loginPage';
 import Splash from './pages/splashScreen';
 
@@ -22,7 +21,6 @@ function App() {
             <Login />  
           </Route>
           <Route path="/feed" exact={true}>
-            <Nav />
             <Feed />  
           </Route>
         </Switch>
