@@ -46,7 +46,7 @@ export const NavItens = styled.span `
     box-sizing: border-box;
     border-bottom: ${props => props.active ? "2px solid white" : "2px solid transparent"};
     transition: linear background 0.8s;
-    transition: border-bottom 0.8s;
+    transition: border-bottom 0.3s;
     cursor: pointer;
     :active {
         background-color: #ef745c;
