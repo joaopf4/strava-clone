@@ -31,7 +31,7 @@ function App() {
 }
 
 const Body = styled.div `
-  width: 100vw;
+  width: 100%;
 `
 
 export default App;

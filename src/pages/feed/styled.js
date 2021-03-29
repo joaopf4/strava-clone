@@ -7,37 +7,51 @@ export const FeedContainer = styled.div `
     display: flex;
     flex-direction: column;
 `
-export const NavContainer = styled.nav `
+export const HeaderContainer = styled.header `
     width: inherit;
-    height: 14vh;
+    height: fit-content;
     background-color: #e84f32;
     box-sizing: border-box;
     color: white;
     display: flex;
     flex-direction: column;
     font-weight: 800;
-    position: relative; 
+    /* position: relative;  */
     p {
         width: fit-content;
-        margin: 16px;
+        margin: 2.5vh;
     }
-    ul {
-        list-style-type: none;
-        text-align: center;
+    nav {
+        flex: 1;
+        align-self: flex-end;
         width: 100%;
-        margin: 0 auto;
         padding: 0px;
         overflow: hidden;
-        position: absolute; 
         bottom: 10px; 
+        display: flex;
+        align-items: center;
     }
-    li {
-        display: inline-block;
-        width: 33.3%;
-        font-size: 14px;
+    div {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;        
     }
     span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        box-sizing: border-box;
+        border-bottom: 3px solid white;
+        transition: background 0.8s;
         cursor: pointer;
+        :active {
+            background-color: #ef745c;
+            background-size: 100%;
+            transition: background 0s;
+        }
     }
 
 `
