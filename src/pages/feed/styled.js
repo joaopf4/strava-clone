@@ -16,7 +16,6 @@ export const HeaderContainer = styled.header `
     display: flex;
     flex-direction: column;
     font-weight: 800;
-    /* position: relative;  */
     p {
         width: fit-content;
         margin: 2.5vh;
@@ -36,22 +35,22 @@ export const HeaderContainer = styled.header `
         height: 40px;
         font-size: 14px;        
     }
-    span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        box-sizing: border-box;
-        border-bottom: 3px solid white;
-        transition: background 0.8s;
-        cursor: pointer;
-        :active {
-            background-color: #ef745c;
-            background-size: 100%;
-            transition: background 0s;
-        }
+`
+export const NavItens = styled.span `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    border-bottom: ${props => props.active ? "2px solid white" : "2px solid transparent"};
+    transition: linear background 0.8s;
+    transition: border-bottom 0.8s;
+    cursor: pointer;
+    :active {
+        background-color: #ef745c;
+        background-size: 100%;
+        transition: background 0s;
     }
-
 `
