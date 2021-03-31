@@ -29,7 +29,7 @@ function Login(props) {
             "email":state.email,
             "password":state.password,
         }
-        if(payload.email === 'provi@provi.com' && payload.password === '12345'){
+        if((payload.email === 'provi@provi.com' || payload.email === 'user@user.com' ) && payload.password === '12345'){
             setLoading(true);
             setTimeout(() => {
                 redirectToHome();
