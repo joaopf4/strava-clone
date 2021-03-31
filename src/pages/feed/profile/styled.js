@@ -5,7 +5,6 @@ export const ProfileFeed = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     background-color: #f1f1f1;
-    min-height: fit-content;
     padding: 20px;
     img {
         border-radius: 50%;

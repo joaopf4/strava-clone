@@ -18,26 +18,26 @@ export const HeaderContainer = styled.header `
     font-weight: 800;
     p {
         width: fit-content;
-        margin: 2.5vh;
+        margin: 1.9vh;
     }
-    nav {
-        flex: 1;
-        align-self: flex-end;
-        width: 100%;
-        padding: 0px;
-        overflow: hidden;
-        bottom: 10px; 
-        display: flex;
-        align-items: center;
-    }
+`
+export const Nav = styled.nav `
+    background-color: #e84f32;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    font-weight: 800;
     div {
         width: 100%;
-        height: 40px;
+        height: 38px;
         font-size: 14px;        
     }
 `
 export const NavItens = styled.span `
     display: flex;
+    color: ${props => props.active ? "white" : "#ffa291"};
     align-items: center;
     justify-content: center;
     width: 100%;

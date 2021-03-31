@@ -2,7 +2,7 @@ import React from 'react';
 import Following from './following';
 import You from './you';
 import Profile from './profile';
-import { FeedContainer, HeaderContainer, NavItens } from './styled';
+import { FeedContainer, HeaderContainer, NavItens, Nav} from './styled';
 
 function Feed() {
     const [following, setFollowing] = React.useState(true);
@@ -32,12 +32,12 @@ function Feed() {
         <FeedContainer>
             <HeaderContainer >
                 <p>Feed</p>
-                <nav>
-                    <div><NavItens active={following} onClick={() => changeToFollowing()} >Following</NavItens></div>
-                    <div><NavItens active={you} onClick={() => changeToYou() } >You</NavItens></div>
-                    <div><NavItens active={profile} onClick={() => changeToProfile()} >Profile</NavItens></div>
-                </nav>
             </HeaderContainer>
+            <Nav>
+                <div><NavItens active={following} onClick={() => changeToFollowing()} >Following</NavItens></div>
+                <div><NavItens active={you} onClick={() => changeToYou() } >You</NavItens></div>
+                <div><NavItens active={profile} onClick={() => changeToProfile()} >Profile</NavItens></div>
+            </Nav>
             <br/>
             {following && <Following />}
             {you && <You />}
