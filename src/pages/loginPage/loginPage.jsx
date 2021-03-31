@@ -59,7 +59,7 @@ function Login(props) {
                         id="email"
                         value={state.email}
                         onChange={handleChange}
-                        placeholder="provi@provi.com"
+                        placeholder="user@user.com"
                     />
                 </InputsComp>
                 <label for="password">Senha</label>
