@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Following from './following';
 import You from './you';
 import Profile from './profile';
 import { FeedContainer, HeaderContainer, NavItens, Nav} from './styled';
+import { useHistory } from 'react-router';
 
 function Feed() {
     const [following, setFollowing] = React.useState(true);
     const [you, setYou] = React.useState(false);
     const [profile, setProfile] = React.useState(false);
-    // const [borderOne, setBorderOne] = React.useState(false);
-    // const [borderTwo, setBorderTwo] = React.useState(false);
-    // const [borderThree, setBorderThree] = React.useState(false);
+    const history = useHistory();
+
+    useEffect(() => {
+        checkAuth();
+      }, );
+
+    function checkAuth() {
+        if (!localStorage.getItem('token', 'user@user.com') || !localStorage.getItem('token', 'provi@provi.com')) {
+            redirectToLogin();
+        }
+    }
+
+    const redirectToLogin = () => {
+        history.push('/login'); 
+    };
 
     function changeToFollowing() {
         setYou(false);
