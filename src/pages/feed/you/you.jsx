@@ -8,7 +8,7 @@ function You() {
     const yourActivities = [
         {
             id: 0,
-            userName: 'Atleta Provi',
+            userName: 'Usuário da conta',
             avatar: `${Avatar}`,
             date: 'Hoje, às 10:33',
             local: 'São Paulo, São Paulo',
@@ -21,7 +21,7 @@ function You() {
         },
         {
             id: 2,
-            userName: 'Atleta Provi',
+            userName: 'Usuário da conta',
             avatar: `${Avatar}`,
             date: 'Ontem, às 05:33',
             local: 'São Paulo, São Paulo',
@@ -34,7 +34,7 @@ function You() {
         },
         {
             id: 3,
-            userName: 'Atleta Provi',
+            userName: 'Usuário da conta',
             avatar: `${Avatar}`,
             date: 'Ontem, às 11:00',
             local: 'São Paulo, São Paulo',
@@ -47,7 +47,7 @@ function You() {
         },
         {
             id: 4,
-            userName: 'Atleta Provi',
+            userName: 'Usuário da conta',
             avatar: `${Avatar}`,
             date: '18 de Março de 2021, às 09:45',
             local: 'São Paulo, São Paulo',
@@ -60,7 +60,7 @@ function You() {
         },
         {
             id: 5,
-            userName: 'Atleta Provi',
+            userName: 'Usuário da conta',
             avatar: `${Avatar}`,
             date: '17 de Março de 2021, às 10:33',
             local: 'São Paulo, São Paulo',

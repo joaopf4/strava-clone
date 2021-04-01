@@ -7,7 +7,7 @@ function Profile() {
     return (
         <ProfileFeed>
             <img alt="avatar" src={Avatar} />
-            <h1>Provi Nascimento</h1>
+            <h1>Usuário da conta</h1>
             <h1>67kg</h1>
             <h1>33 anos</h1>
             <h1>Bicicleta: Audax sport</h1>
