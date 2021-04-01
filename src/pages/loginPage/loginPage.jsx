@@ -1,28 +1,28 @@
 import React from 'react';
-import { LoginContainer, InputsComp, Button } from './styled';
+import { LoginContainer, InputsComp, Button, Loader } from './styled';
 import Strava from '../../assets/strava-icon.png'
 import { useHistory } from 'react-router';
 
-function Login(props) {
+function Login() {
     const [passwordShown, setPasswordShown] = React.useState(false);
     const [state , setState] = React.useState({
         email : "",
         password : "",
         successMessage: null
-    })
-    const [loading, setLoading] = React.useState(false)
-
+    });
+    const [loading, setLoading] = React.useState(false);
+    const history = useHistory();
+    
     const handleChange = (e) => {
         const {id , value} = e.target   
         setState(prevState => ({
             ...prevState,
             [id] : value
         }))
-    }
-
+    };
     const togglePasswordVisibility = () => {
         setPasswordShown(!passwordShown);
-      }
+    };
     const handleLogin = (e) => {
         e.preventDefault();
         const payload={
@@ -30,6 +30,7 @@ function Login(props) {
             "password":state.password,
         }
         if((payload.email === 'provi@provi.com' || payload.email === 'user@user.com' ) && payload.password === '12345'){
+            localStorage.setItem('token', state.email)
             setLoading(true);
             setTimeout(() => {
                 redirectToHome();
@@ -39,11 +40,10 @@ function Login(props) {
 
         }
         
-    }
-    const history = useHistory()
+    };
     const redirectToHome = () => {
-        history.push('/feed'); //adicionar um set time out com um loading
-    }
+        history.push('/feed'); 
+    };
 
     return (
         <LoginContainer>
@@ -82,13 +82,19 @@ function Login(props) {
                 </InputsComp>
                 {!loading ? 
                 <Button 
-                    type="submit"
-                    onClick={handleLogin}
+                type="submit"
+                onClick={handleLogin}
                 >
                     Login
                 </Button> 
                 :
-                <span><br/>Carregando...</span>
+                <Loader>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </Loader>
+
                 }
             </form>
         </LoginContainer>
